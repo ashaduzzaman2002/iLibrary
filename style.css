@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/library2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.booklist{
+    background-color: rgba(0,0,0,0.5);
+    width: 500px;
+    margin: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.head{
+    width: 500px;
+    background-color: rgba(0,0,0,0.6);
+    margin: 17% auto 0;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.item{
+    padding-bottom: 30px;
+}
+.item ol li {
+    list-style: none;
+    padding: 5px 35px;
+    
+}
+.item ol li a{
+    text-decoration: none;
+    color: #d1cece;
+    font-size: 18px;
+}
+.item ol li a:hover{
+    color: aqua;
+}
+
+@media screen and (min-width: 623px) and (max-width: 721px){
+    .head{
+        width: 100%;
+        margin: 18% auto 0;
+    }
+    .booklist{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 623px){
+    .head{
+        width: 100%;
+    }
+    .booklist{
+        width: 90%;
+    }
+    .head h1{
+        font-size: 1.16 !important;
+    }
+    .item ol li {
+        padding: 5px 25px;
+        
+    }
+}
